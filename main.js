@@ -36,7 +36,10 @@ replaceAllButton.addEventListener('click', function () {
             // console.log(cellElement)
             // console.log(cellElement.includes(findInputValue))
             if (cellElement.includes(findInputValue)) {
-                cellElement.replace(findInputValue, replaceInputValue) //I got this far and couldn't get this to work. Not sure how else to go about it.
+                let newCellElement = cellElement.replace(findInputValue, replaceInputValue)
+                result[count].innerHTML = newCellElement
+                // cellElement.innerHTML = newCellElement 
+                //I got this far and couldn't get this to work. Not sure how else to go about it.
             } else {
 
             }
